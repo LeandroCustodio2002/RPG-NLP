@@ -1,0 +1,56 @@
+
+.game-header {
+    flex-shrink: 0;
+    min-height: 85px;
+    padding: 18px 40px;
+    border-bottom: 1px solid #302921;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #151311;
+  }
+  
+  .chapter-label {
+    color: #b08a59;
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+  
+  .game-header h2 {
+    margin: 5px 0 0;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 400;
+  }
+  
+  .session-status {
+    font-size: 11px;
+    color: #a99b89;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  
+  .status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #83a36e;
+    box-shadow: 0 0 10px #83a36e77;
+  }
+  
+  @media (max-width: 760px) {
+    .game-header {
+      padding: 17px 20px;
+    }
+  
+    .session-status {
+      font-size: 0;
+    }
+  
+    .session-status .status-dot {
+      width: 9px;
+      height: 9px;
+    }
+  }
+  

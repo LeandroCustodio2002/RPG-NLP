@@ -1,0 +1,129 @@
+
+.chat-area {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 35px 45px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #493827 transparent;
+  }
+  
+  .chat-area::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .chat-area::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .chat-area::-webkit-scrollbar-thumb {
+    background: #493827;
+    border-radius: 10px;
+  }
+  
+  .story-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #8e795e;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+  }
+  
+  .story-line {
+    height: 1px;
+    flex: 1;
+    max-width: 100px;
+    background: #493827;
+  }
+  
+  .messages {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .message {
+    display: flex;
+    gap: 15px;
+    max-width: 85%;
+  }
+  
+  .message.player {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+  }
+  
+  .message-avatar {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #735735;
+    background: #2c231b;
+    color: #d8b17a;
+    font-family: Georgia, serif;
+  }
+  
+  .message.player .message-avatar {
+    background: #26302a;
+    border-color: #536c56;
+    color: #b4d0a9;
+  }
+  
+  .message-body {
+    min-width: 0;
+  }
+  
+  .message-author {
+    font-size: 9px;
+    letter-spacing: 1.8px;
+    color: #bd9865;
+    margin-bottom: 10px;
+  }
+  
+  .message.player .message-author {
+    color: #9ebd91;
+    text-align: right;
+  }
+  
+  .message-body p {
+    margin: 0;
+    color: #d1c6b7;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.8;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+  }
+  
+  .message.player .message-body p {
+    background: #242b24;
+    border: 1px solid #3b4a39;
+    padding: 13px 17px;
+    color: #dce4d8;
+  }
+  
+  .message-roll {
+    margin-left: 12px;
+    color: #d4ad70;
+    letter-spacing: 1px;
+  }
+  
+  @media (max-width: 760px) {
+    .chat-area {
+      padding: 15px 8px;
+    }
+  
+    .message {
+      max-width: 100%;
+    }
+  }
+  
